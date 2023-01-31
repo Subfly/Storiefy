@@ -20,26 +20,33 @@ Not only that, the implementation has been made via respecting the SOLID princip
 ## You want sneak peeks? There are sneak peeks!
 
 * Cubic Transition
+
 ![til](./gifs/cubic_transition.gif)
 
 * Tap left or right to pass stories or users
+
 ![til](./gifs/tap_to_pass.gif)
 
 * Swipe to close stories
+
 ![til](./gifs/swipe_to_close.gif)
 
 * Start from where you left off
 * 2.5 seconds to make a story seen, its a design choice and can be reduced
+
 ![til](./gifs/start_left_off.gif)
 
 * Tap profile picture to see profile, swipe between pages to see stories or posts
+
 ![til](./gifs/see_profile.gif)
 
 * Change injected dependencies
 * Restart required!
+
 ![til](./gifs/inject.gif)
 
 * Change theme
+
 ![til](./gifs/theme.gif)
 
 
