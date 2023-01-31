@@ -120,6 +120,7 @@ class _StoryWayAppState extends State<StoryWayApp> {
                     }
 
                     return MaterialApp(
+                      debugShowCheckedModeBanner: false,
                       title: 'StoryWay',
                       locale: appLocale,
                       themeMode: themeMode,
