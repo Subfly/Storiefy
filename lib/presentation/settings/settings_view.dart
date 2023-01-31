@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
+import 'package:story_way/common/components/restartable_widget.dart';
 import 'package:story_way/common/components/settings_selection_dialog.dart';
 import 'package:story_way/common/enums/database_type.dart';
 import 'package:story_way/common/enums/language_type.dart';
@@ -94,7 +95,9 @@ class SettingsView extends StatelessWidget {
                               behavior: SnackBarBehavior.floating,
                               action: SnackBarAction(
                                 label: "Restart",
-                                onPressed: () {},
+                                onPressed: () {
+                                  RestartableWidget.restartApp(context);
+                                },
                               ),
                               duration: const Duration(seconds: 300),
                             ),
@@ -138,7 +141,9 @@ class SettingsView extends StatelessWidget {
                               behavior: SnackBarBehavior.floating,
                               action: SnackBarAction(
                                 label: "Restart",
-                                onPressed: () {},
+                                onPressed: () {
+                                  RestartableWidget.restartApp(context);
+                                },
                               ),
                             ),
                           );
