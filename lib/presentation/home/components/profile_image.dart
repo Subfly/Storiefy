@@ -16,8 +16,8 @@ class ProfileImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return imageUrl.isEmpty
-            ? const Icon(Feather.user)
-            : Stack(
+        ? const Icon(Feather.user)
+        : Stack(
             alignment: Alignment.center,
             children: [
               Container(
@@ -41,6 +41,8 @@ class ProfileImage extends StatelessWidget {
               CircleAvatar(
                 radius: foregroundSize,
                 foregroundImage: NetworkImage(imageUrl),
+                backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                foregroundColor: Theme.of(context).scaffoldBackgroundColor,
               ),
             ],
           );
