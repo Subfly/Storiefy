@@ -71,7 +71,11 @@ Install these required extensions for VSCode in order to be able to run Flutter:
 - Dart
 - Flutter
 
-Then just run the app. 
+Then just run the app such as:
+- Open terminal in VSCode
+- Copy & Paste: flutter run
+- If multiple devices are connected to the computer, the runner will ask you to which device you want to run on
+- If you want to test in release mode, copy & paste: flutter run --release
 
 !!! Important:
 - If you are using iOS emulator, as the video_player package relies on AVMediaPlayer, the app will crash due to unavailability of the player. Try to run on a real device for iOS tests.
