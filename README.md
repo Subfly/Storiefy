@@ -57,7 +57,7 @@ Install Flutter if not available in your computer from:
 - [Official Flutter Website](https://docs.flutter.dev/get-started/install)
 - Version implemented: Channel stable, 3.3.10
 
-Install Android Studio if available in your computer form:
+Install Android Studio if not available in your computer form:
 - [Official Android Studio Website](https://developer.android.com/studio?gclid=Cj0KCQiA8t2eBhDeARIsAAVEga3YBXLFbK_rctgmI8ZyoWuHS9iifuVni2fSbmYtVBA5e5KQs3ioBPEaAslgEALw_wcB&gclsrc=aw.ds)
 - Version implemented: Android SDK version 33.0.0, Android Studio (version 2022.1)
 
