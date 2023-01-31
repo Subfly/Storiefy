@@ -62,7 +62,7 @@ class _VideoStoryComponentState extends State<VideoStoryComponent> {
                 widget.onTickCallback(
                   elapsed.inMilliseconds / timeToCompare.inMilliseconds,
                 );
-                if (elapsed > const Duration(milliseconds: 2500)) {
+                if (elapsed > const Duration(milliseconds: 1500)) {
                   BlocProvider.of<AppDataCubit>(context).addSeenStory(
                     storyId: widget.storyId,
                     userId: widget.userId,

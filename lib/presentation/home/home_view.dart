@@ -71,6 +71,7 @@ class HomeView extends StatelessWidget {
             );
           } else {
             return ListView.separated(
+              physics: const BouncingScrollPhysics(),
               itemCount: state.stories.isNotEmpty
                   ? 1 + state.posts.length
                   : state.posts.length,

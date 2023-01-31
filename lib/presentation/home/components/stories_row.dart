@@ -20,6 +20,7 @@ class StoriesRow extends StatelessWidget {
       width: double.infinity,
       height: MediaQuery.of(context).size.width / 4,
       child: ListView.separated(
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
         primary: true,

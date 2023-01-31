@@ -13,7 +13,7 @@ Not only that, the implementation has been made via respecting the SOLID princip
 - MVVM-like Architecture with Cubit State Management
 - Simple Event Driven Architecture on story implementation
 - Ready-to-use JSON dataset with service layer that simulates API calls
-- Sliver Tab Bar implementation with GridView and ListView
+- Sliver Tab Bar implementation with NestedScrollView, GridView and ListView
 - Powerful, fast and good looking animations
 - Dark Theme support
   
@@ -32,7 +32,8 @@ Not only that, the implementation has been made via respecting the SOLID princip
 ![til](./gifs/swipe_to_close.gif)
 
 * Start from where you left off
-* 2.5 seconds to make a story seen, its a design choice and can be reduced
+* 1.5 seconds to make a story seen, its a design choice and can be reduced
+* Video is recorded with 2.5 seconds of seen time
 
 ![til](./gifs/start_left_off.gif)
 

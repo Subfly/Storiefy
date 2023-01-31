@@ -47,6 +47,7 @@ class SettingsView extends StatelessWidget {
       body: Column(
         children: [
           ListView.builder(
+            physics: const BouncingScrollPhysics(),
             itemCount: 3,
             shrinkWrap: true,
             itemBuilder: (context, index) {
@@ -150,6 +151,7 @@ class SettingsView extends StatelessWidget {
             },
           ),
           ListView.builder(
+            physics: const BouncingScrollPhysics(),
             itemCount: 3,
             shrinkWrap: true,
             itemBuilder: (context, index) {

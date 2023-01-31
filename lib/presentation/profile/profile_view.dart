@@ -76,6 +76,7 @@ class ProfileView extends StatelessWidget {
               return DefaultTabController(
                 length: 2,
                 child: NestedScrollView(
+                  physics: const BouncingScrollPhysics(),
                   headerSliverBuilder: (_, __) {
                     return [
                       SliverList(
@@ -216,6 +217,7 @@ class ProfileView extends StatelessWidget {
                           child: TabBarView(
                             children: [
                               GridView.count(
+                                physics: const BouncingScrollPhysics(),
                                 crossAxisCount: 3,
                                 childAspectRatio: 0.65,
                                 children: state.stories?.stories.map(
@@ -243,6 +245,7 @@ class ProfileView extends StatelessWidget {
                                     [],
                               ),
                               ListView.builder(
+                                physics: const BouncingScrollPhysics(),
                                 itemCount: state.posts.length,
                                 itemBuilder: (context, index) {
                                   return PostTile(
