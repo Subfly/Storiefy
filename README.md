@@ -55,11 +55,14 @@ Not only that, the implementation has been made via respecting the SOLID princip
 
 Install Flutter if not available in your computer from:
 - [Official Flutter Website](https://docs.flutter.dev/get-started/install)
+- Version implemented: Channel stable, 3.3.10
 
 Install Android Studio if available in your computer form:
 - [Official Android Studio Website](https://developer.android.com/studio?gclid=Cj0KCQiA8t2eBhDeARIsAAVEga3YBXLFbK_rctgmI8ZyoWuHS9iifuVni2fSbmYtVBA5e5KQs3ioBPEaAslgEALw_wcB&gclsrc=aw.ds)
+- Version implemented: Android SDK version 33.0.0, Android Studio (version 2022.1)
 
 Install XCode from AppStore if you are using macOS
+- Version implemented: Xcode 14.2
 
 Install VSCode from:
 - [Official VSCode Website](https://code.visualstudio.com/)
@@ -71,4 +74,4 @@ Install these required extensions for VSCode in order to be able to run Flutter:
 Then just run the app. 
 
 !!! Important:
-- If you are using iOS emulator, as the video_player package relies on AVMediaPlayer, the app will crash due to unavailability of the player. Try to run on a real device.
+- If you are using iOS emulator, as the video_player package relies on AVMediaPlayer, the app will crash due to unavailability of the player. Try to run on a real device for iOS tests.
