@@ -136,12 +136,14 @@ class _MainPagerState extends State<MainPager> {
           child: Center(
             child: PageView.builder(
               controller: verticalPageController,
+              physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.vertical,
               itemCount: 2,
               itemBuilder: (context, index) {
                 if (index == 0) {
                   // Horizontal (User Based Stories) Pager
                   return PageView.builder(
+                    physics: const BouncingScrollPhysics(),
                     controller: pageController,
                     itemCount: widget.stories.length,
                     onPageChanged: (newIndex) {

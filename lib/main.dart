@@ -27,6 +27,15 @@ import 'domain/state/preferences/preferences_state.dart';
 void main() async {
   await Hive.initFlutter();
   await StoryDatabaseRepositorySqfliteImpl.initStoriesDB();
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+    ),
+  );
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const StoryWayApp());
 }
 

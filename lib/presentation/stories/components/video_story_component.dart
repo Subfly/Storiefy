@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -42,7 +43,9 @@ class _VideoStoryComponentState extends State<VideoStoryComponent> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset(widget.videoUrl);
+    final assetStr =
+        Platform.isIOS ? widget.videoUrl : widget.videoUrl.substring(2);
+    _controller = VideoPlayerController.asset(assetStr);
     _controller.initialize().then(
       (value) {
         if (mounted) {
@@ -79,8 +82,8 @@ class _VideoStoryComponentState extends State<VideoStoryComponent> {
           );
           setState(() {
             _isInitialized = true;
+            _controller.play();
           });
-          _controller.play();
         }
       },
     );
@@ -97,7 +100,7 @@ class _VideoStoryComponentState extends State<VideoStoryComponent> {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
-    
+
     return GestureDetector(
       onTapUp: (details) {
         final position = details.globalPosition.dx;
